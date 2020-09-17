@@ -1,4 +1,4 @@
-//Quick Sort | Divide and Conquer
+//Quick Sort
 //2020.9.2 by indevn
 
 #include <iostream>
