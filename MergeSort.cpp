@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int arrayOri[12]={9,2,3,4,5,6,7,8,1,10,11,12};
+int arrayOri[12]={-9,2,3,4,5,6,7,8,1,10,11,12};
 int arrayTem[12];
 void Merge(int ori[],int begPos,int midPos,int endPos,int tem[]);
 void MergeSort(int ori[],int begPos,int endPos,int tem[]);
