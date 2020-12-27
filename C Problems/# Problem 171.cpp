@@ -20,14 +20,14 @@ int main(){
         char tim2[6];
         std::cin>>inde>>tim1>>tim2;
 
-        info[inde].tim+=-(((tim1[0]-'0')*10+(tim1[1]-'0'))*60+((tim1[3]-'0')*10+(tim1[4]-'0')))
-                        +(((tim2[0]-'0')*10+(tim2[1]-'0'))*60+((tim2[3]-'0')*10+(tim2[4]-'0')));
+        info[inde].tim+= -(((tim1[0]-'0')*10+(tim1[1]-'0'))*60+((tim1[3]-'0')*10+(tim1[4]-'0')))
+                         +(((tim2[0]-'0')*10+(tim2[1]-'0'))*60+((tim2[3]-'0')*10+(tim2[4]-'0')));
         info[inde].dex=inde;//save
     }
 
-    std::sort(info+1,info+101,cmp);
-
-    for(int i=1;info[i].tim!=0;i++)
+    std::sort(info,info+101,cmp);
+    
+    for(int i=0;info[i].tim!=0;i++)
         if(i!=n)
             std::cout<<info[i].dex<<" "<<info[i].tim<<std::endl;
         else
